@@ -44,8 +44,8 @@ $(function () {
     $('.type-win').click(function () {
         var winos = $(this).attr("id");
         if (winos == "win64") {
-            $('.dlink-win').data('os', 'win64');
-            $('.dlink-win > small').text("64-bit (.exe)");
+            $('.dlink-win').data('os', 'win64');//data書き換え
+            $('.dlink-win > small').text("64-bit (.exe)");//テキスト変更
         } else if (winos == "win32") {
             $('.dlink-win').data('os', 'win32');
             $('.dlink-win > small').text("32-bit (.exe)");
@@ -89,19 +89,20 @@ $(function () {
         link.download = downloads;
         link.click();
     });
+
     $('.dlink-linux').click(function () {
         var select = $(this).data('os');
         var herfs, downloads;
         var link = document.createElement('a');
         if (select == "linux64") {
             herfs = herfv + 'Linux64' + '.tar';
-            downloads = "TTSP-" + version + ".tar";
+            downloads = "TTSP-" + version + "-Linux64" + ".tar";
         } else if (select == "linux32") {
             herfs = herfv + "Linux32" + ".tar";
-            downloads = "TTSP-" + version + ".tar";
+            downloads = "TTSP-" + version + "-Linux32" + ".tar";
         } else if (select == "linuxARM") {
             herfs = herfv + "linux-armv6hf" + ".tar";
-            downloads = "TTSP-" + version + ".tar";
+            downloads = "TTSP-" + version + "-linux-armv6hf" + ".tar";
         }else {
             return;
         }
