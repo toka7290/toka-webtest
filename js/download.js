@@ -78,10 +78,10 @@ $(function () {
         var link = document.createElement('a');
         if (select == "win64") {
             herfs = herfv + 'win64' + '.zip';
-            downloads = "TTSP-" + version + ".zip";
+            downloads = "TTSP-" + version + "-win64" + ".zip";
         } else if (select == "win32") {
             herfs = herfv + "win32" + ".zip";
-            downloads = "TTSP-" + version + ".zip";
+            downloads = "TTSP-" + version + "-win32" + ".zip";
         } else {
             return;
         }
@@ -116,7 +116,7 @@ $(function () {
         var link = document.createElement('a');
         if (select == "osx") {
             herfs = herfv + 'osx' + '.zip';
-            downloads = "TTSP-" + version + ".zip";
+            downloads = "TTSP-" + version + "-osx" + ".zip";
         } else {
             return;
         }
