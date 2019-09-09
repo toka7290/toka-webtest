@@ -55,7 +55,8 @@
 
     <main role="main">
         <article id="content">
-            <p onload="this.textContent=getUuid_v4();"></p>
+            <button onclick="document.getElementById('uuid').textContent=getUuid_v4()">click</button>
+            <p id="uuid">クリック</p>
         </article>
     </main>
 
