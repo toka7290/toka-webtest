@@ -10,5 +10,5 @@ function getUuid_v4() {
                 break;
         }
     }
-    return chars.join();
+    return chars.join("");
 }
