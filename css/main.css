@@ -6,7 +6,7 @@
 /*共通スタイル*/
 body{
     color:black;
-    font-family:游ゴシック;
+    font-family:'YuMincho','Yu Mincho','游明朝体',游ゴシック;
     line-height:1em;
     background: #f0ebeb;
     /*background: rgb(214, 253, 174);*/
